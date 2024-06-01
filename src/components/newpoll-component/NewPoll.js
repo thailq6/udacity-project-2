@@ -26,7 +26,7 @@ const NewPoll = ({ dispatch }) => {
                 <div style={{ display: "flex" }}>
                     {["firstOption", "secondOption"].map((option, idx) => (
                         <div key={idx} className="form-group p-2 col-6">
-                            <label htmlFor={option}>{`Option ${idx + 1}`}</label>
+                            <label htmlFor={option} data-testid={`${option}Label`}>{`Option ${idx + 1}`}</label>
                             <input
                                 className="form-control"
                                 required
@@ -36,12 +36,13 @@ const NewPoll = ({ dispatch }) => {
                                 type="text"
                                 name={option}
                                 id={option}
+                                data-testid={option}
                             />
                         </div>
                     ))}
                 </div>
                 <div className="text-center p-2">
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary" data-testid="submit-poll">Submit</button>
                 </div>
             </form>
         </div>
