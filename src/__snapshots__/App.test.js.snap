@@ -9,113 +9,77 @@ Object {
         class="container mx-auto py-4"
       >
         <div
-          class=".container-fluid"
+          class="container-fluid text-center"
         >
-          <div
-            class="row"
+          <h1
+            class="fs-1 fw-bold"
           >
+            Employee Pool
+          </h1>
+          <img
+            alt="Login"
+            class="img-login"
+            src="./login.svg"
+          />
+          <h2
+            class="fs-5 fw-bolder"
+            data-testid="login-heading"
+          >
+            Login
+          </h2>
+          <form>
             <div
-              class="col-12 text-center"
+              class="form-group row mb-3"
             >
-              <p
-                class="fs-1 fw-bold"
+              <label
+                class="col-sm-2 col-form-label"
+                for="username"
               >
-                Employee Pool
-              </p>
-            </div>
-          </div>
-          <div
-            class="row"
-          >
-            <div
-              class="col-12 text-center"
-            >
-              <img
-                alt="..."
-                class="img-login"
-                src="./login.svg"
-              />
-            </div>
-          </div>
-          <div
-            class="row"
-          >
-            <div
-              class="col-12 text-center"
-            >
-              <p
-                class="fs-5 fw-bolder"
-                data-testid="login-heading"
+                User
+              </label>
+              <div
+                class="col-sm-10"
               >
-                Login
-              </p>
+                <input
+                  class="form-control"
+                  data-testid="username"
+                  id="username"
+                  name="username"
+                  type="text"
+                  value="thailq6"
+                />
+              </div>
             </div>
-          </div>
-          <div
-            class="row"
-          >
             <div
-              class="col-12"
+              class="form-group row mb-3"
             >
-              <form>
-                <div
-                  class="row mb-3"
-                >
-                  <label
-                    class="col-sm-2 col-form-label"
-                    for="username"
-                  >
-                    User
-                  </label>
-                  <div
-                    class="col-sm-10"
-                  >
-                    <input
-                      class="form-control"
-                      data-testid="username"
-                      id="username"
-                      name="username"
-                      type="text"
-                      value="tylermcginnis"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="row mb-3"
-                >
-                  <label
-                    class="col-sm-2 col-form-label"
-                    for="inputPassword"
-                  >
-                    Password
-                  </label>
-                  <div
-                    class="col-sm-10"
-                  >
-                    <input
-                      class="form-control"
-                      data-testid="password"
-                      id="password"
-                      name="password"
-                      type="password"
-                      value="abc321"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="text-center"
-                >
-                  <button
-                    class="btn btn-primary"
-                    data-testid="submit"
-                    type="submit"
-                  >
-                    Sign in
-                  </button>
-                </div>
-              </form>
+              <label
+                class="col-sm-2 col-form-label"
+                for="password"
+              >
+                Password
+              </label>
+              <div
+                class="col-sm-10"
+              >
+                <input
+                  class="form-control"
+                  data-testid="password"
+                  id="password"
+                  name="password"
+                  type="password"
+                  value="pwthailq6"
+                />
+              </div>
             </div>
-          </div>
+            <button
+              class="btn btn-primary"
+              data-testid="submit"
+              type="submit"
+            >
+              Sign in
+            </button>
+          </form>
         </div>
       </div>
     </div>
@@ -125,402 +89,77 @@ Object {
       class="container mx-auto py-4"
     >
       <div
-        class=".container-fluid"
+        class="container-fluid text-center"
       >
-        <div
-          class="row"
+        <h1
+          class="fs-1 fw-bold"
         >
+          Employee Pool
+        </h1>
+        <img
+          alt="Login"
+          class="img-login"
+          src="./login.svg"
+        />
+        <h2
+          class="fs-5 fw-bolder"
+          data-testid="login-heading"
+        >
+          Login
+        </h2>
+        <form>
           <div
-            class="col-12 text-center"
+            class="form-group row mb-3"
           >
-            <p
-              class="fs-1 fw-bold"
+            <label
+              class="col-sm-2 col-form-label"
+              for="username"
             >
-              Employee Pool
-            </p>
-          </div>
-        </div>
-        <div
-          class="row"
-        >
-          <div
-            class="col-12 text-center"
-          >
-            <img
-              alt="..."
-              class="img-login"
-              src="./login.svg"
-            />
-          </div>
-        </div>
-        <div
-          class="row"
-        >
-          <div
-            class="col-12 text-center"
-          >
-            <p
-              class="fs-5 fw-bolder"
-              data-testid="login-heading"
-            >
-              Login
-            </p>
-          </div>
-        </div>
-        <div
-          class="row"
-        >
-          <div
-            class="col-12"
-          >
-            <form>
-              <div
-                class="row mb-3"
-              >
-                <label
-                  class="col-sm-2 col-form-label"
-                  for="username"
-                >
-                  User
-                </label>
-                <div
-                  class="col-sm-10"
-                >
-                  <input
-                    class="form-control"
-                    data-testid="username"
-                    id="username"
-                    name="username"
-                    type="text"
-                    value="tylermcginnis"
-                  />
-                </div>
-              </div>
-              <div
-                class="row mb-3"
-              >
-                <label
-                  class="col-sm-2 col-form-label"
-                  for="inputPassword"
-                >
-                  Password
-                </label>
-                <div
-                  class="col-sm-10"
-                >
-                  <input
-                    class="form-control"
-                    data-testid="password"
-                    id="password"
-                    name="password"
-                    type="password"
-                    value="abc321"
-                  />
-                </div>
-              </div>
-              <div
-                class="text-center"
-              >
-                <button
-                  class="btn btn-primary"
-                  data-testid="submit"
-                  type="submit"
-                >
-                  Sign in
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`App should render the component 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="container mx-auto py-4"
-      >
-        <div
-          class=".container-fluid"
-        >
-          <div
-            class="row"
-          >
+              User
+            </label>
             <div
-              class="col-12 text-center"
+              class="col-sm-10"
             >
-              <p
-                class="fs-1 fw-bold"
-              >
-                Employee Pool
-              </p>
-            </div>
-          </div>
-          <div
-            class="row"
-          >
-            <div
-              class="col-12 text-center"
-            >
-              <img
-                alt="..."
-                class="img-login"
-                src="./login.svg"
+              <input
+                class="form-control"
+                data-testid="username"
+                id="username"
+                name="username"
+                type="text"
+                value="thailq6"
               />
             </div>
           </div>
           <div
-            class="row"
+            class="form-group row mb-3"
           >
-            <div
-              class="col-12 text-center"
+            <label
+              class="col-sm-2 col-form-label"
+              for="password"
             >
-              <p
-                class="fs-5 fw-bolder"
-                data-testid="login-heading"
-              >
-                Login
-              </p>
+              Password
+            </label>
+            <div
+              class="col-sm-10"
+            >
+              <input
+                class="form-control"
+                data-testid="password"
+                id="password"
+                name="password"
+                type="password"
+                value="pwthailq6"
+              />
             </div>
           </div>
-          <div
-            class="row"
+          <button
+            class="btn btn-primary"
+            data-testid="submit"
+            type="submit"
           >
-            <div
-              class="col-12"
-            >
-              <form>
-                <div
-                  class="row mb-3"
-                >
-                  <label
-                    class="col-sm-2 col-form-label"
-                    for="username"
-                  >
-                    User
-                  </label>
-                  <div
-                    class="col-sm-10"
-                  >
-                    <input
-                      class="form-control"
-                      data-testid="username"
-                      id="username"
-                      name="username"
-                      type="text"
-                      value="tylermcginnis"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="row mb-3"
-                >
-                  <label
-                    class="col-sm-2 col-form-label"
-                    for="inputPassword"
-                  >
-                    Password
-                  </label>
-                  <div
-                    class="col-sm-10"
-                  >
-                    <input
-                      class="form-control"
-                      data-testid="password"
-                      id="password"
-                      name="password"
-                      type="password"
-                      value="abc321"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="text-center"
-                >
-                  <button
-                    class="btn btn-primary"
-                    data-testid="submit"
-                    type="submit"
-                  >
-                    Sign in
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="container mx-auto py-4"
-    >
-      <div
-        class=".container-fluid"
-      >
-        <div
-          class="row"
-        >
-          <div
-            class="col-12 text-center"
-          >
-            <p
-              class="fs-1 fw-bold"
-            >
-              Employee Pool
-            </p>
-          </div>
-        </div>
-        <div
-          class="row"
-        >
-          <div
-            class="col-12 text-center"
-          >
-            <img
-              alt="..."
-              class="img-login"
-              src="./login.svg"
-            />
-          </div>
-        </div>
-        <div
-          class="row"
-        >
-          <div
-            class="col-12 text-center"
-          >
-            <p
-              class="fs-5 fw-bolder"
-              data-testid="login-heading"
-            >
-              Login
-            </p>
-          </div>
-        </div>
-        <div
-          class="row"
-        >
-          <div
-            class="col-12"
-          >
-            <form>
-              <div
-                class="row mb-3"
-              >
-                <label
-                  class="col-sm-2 col-form-label"
-                  for="username"
-                >
-                  User
-                </label>
-                <div
-                  class="col-sm-10"
-                >
-                  <input
-                    class="form-control"
-                    data-testid="username"
-                    id="username"
-                    name="username"
-                    type="text"
-                    value="tylermcginnis"
-                  />
-                </div>
-              </div>
-              <div
-                class="row mb-3"
-              >
-                <label
-                  class="col-sm-2 col-form-label"
-                  for="inputPassword"
-                >
-                  Password
-                </label>
-                <div
-                  class="col-sm-10"
-                >
-                  <input
-                    class="form-control"
-                    data-testid="password"
-                    id="password"
-                    name="password"
-                    type="password"
-                    value="abc321"
-                  />
-                </div>
-              </div>
-              <div
-                class="text-center"
-              >
-                <button
-                  class="btn btn-primary"
-                  data-testid="submit"
-                  type="submit"
-                >
-                  Sign in
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+            Sign in
+          </button>
+        </form>
       </div>
     </div>
   </div>,

@@ -18,7 +18,7 @@ describe("NewPoll", () => {
         expect(component).toMatchSnapshot();
     });
 
-    it("should handle input changes correctly", () => {
+    it("handle input changes correctly", () => {
         const component = render(
             <Provider store={store}>
                 <BrowserRouter>
@@ -27,12 +27,27 @@ describe("NewPoll", () => {
             </Provider>
         );
 
+        const firstOptionLabelElement = component.getByTestId("firstOptionLabel");
         const firstOptionInputElement = component.getByTestId("firstOption");
-        const secondOptionInputElement = component.getByTestId("secondOption");
+        expect(firstOptionLabelElement.textContent).toBe("First Option");
+
         fireEvent.change(firstOptionInputElement, { target: { value: 'test first' } });
-        fireEvent.change(secondOptionInputElement, { target: { value: 'test second' } });
-        
         expect(firstOptionInputElement.value).toBe("test first");
+    });
+    it("should display Second Option elements", () => {
+        const component = render(
+            <Provider store={store}>
+                <BrowserRouter>
+                    <NewPoll />
+                </BrowserRouter>
+            </Provider>
+        );
+
+        const secondOptionLabelElement = component.getByTestId("secondOptionLabel");
+        const secondOptionInputElement = component.getByTestId("secondOption");
+        expect(secondOptionLabelElement.textContent).toBe("Second Option");
+
+        fireEvent.change(secondOptionInputElement, { target: { value: 'test second' } });
         expect(secondOptionInputElement.value).toBe("test second");
     });
 
@@ -45,8 +60,19 @@ describe("NewPoll", () => {
             </Provider>
         );
 
+        const firstOptionLabelElement = component.getByTestId("firstOptionLabel");
+        const firstOptionInputElement = component.getByTestId("firstOption");
+        const secondOptionLabelElement = component.getByTestId("secondOptionLabel");
+        const secondOptionInputElement = component.getByTestId("secondOption");
         const submitButtonElement = component.getByTestId("submit-poll");
-        fireEvent.click(submitButtonElement);
-        // Additional assertions can be added here to verify the navigation or the action dispatch
+
+        expect(firstOptionLabelElement.textContent).toBe("First Option");
+        expect(secondOptionLabelElement.textContent).toBe("Second Option");
+        expect(submitButtonElement.textContent).toBe("Submit");
+
+        fireEvent.change(firstOptionInputElement, { target: { value: 'Test1' } });
+        fireEvent.change(secondOptionInputElement, { target: { value: 'Test2' } });
+        expect(firstOptionInputElement.value).toBe("Test1");
+        expect(secondOptionInputElement.value).toBe("Test2");
     });
 });
